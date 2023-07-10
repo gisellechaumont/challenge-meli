@@ -56,6 +56,6 @@ En la página principal se visualiza la caja de búsqueda. En la misma, se ingre
 - Con el objetivo de optimizar el rendimiento y la carga del cliente, se implementó una limitación en la cantidad de productos desde el servidor.
 - En este primera versión, en la pantalla de detalles del producto, no se incluyó el breadcrumb. Esto debido a que los datos necesarios para su construcción no estaban disponibles desde el lado del servidor, según los requerimientos del endpoint. Sin embargo, en caso de que sea posible modificar la URL de la vista de detalle, se consideraría enviar las categorías como parámetros de consulta (query) al navegar hacia esa pantalla. Considero que es una buena solución por ser una aplicación pequeña.
 - Se adoptó una arquitectura escalable desde el frontend. Esta arquitectura permite una fácil incorporación de nuevas funcionalidades, así como la gestión eficiente de cambios y mejoras.
-
+- Si bien no es una buena práctica incluir el archivo .env, en este caso se agrega al repositorio para facilitar las pruebas del challenge.
 
 
