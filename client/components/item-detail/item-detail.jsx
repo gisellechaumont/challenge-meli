@@ -5,7 +5,7 @@ import { Fragment, useEffect, useState } from "react";
 import formatPrice from "../../utils/format-price";
 import Breadcrumb from "../breadcrumb/breadcrumb";
 
-const ItemDetails = ({ id, categories }) => {
+const ItemDetails = ({ id }) => {
   const [itemDetails, setItemDetails] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}`;
@@ -31,7 +31,6 @@ const ItemDetails = ({ id, categories }) => {
 
   return (
     <Fragment>
-      <Breadcrumb categories={categories} />
       <div className={classes.item}>
         <div className={classes.itemDetails}>
           <div className={classes.imageWrapper}>
