@@ -1,0 +1,227 @@
+@import "../../styles/globals.scss";
+
+.item {
+  margin: auto;
+  margin-bottom: 20px;
+  height: fit-content;
+  width: 1000px;
+  background-color: $color-white;
+  padding: 32px 0;
+
+  .itemDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .imageWrapper {
+      position: relative;
+      min-width: 680px;
+      height: 500px;
+      .image {
+      }
+    }
+
+    .itemInfo {
+      padding-right: 32px;
+      margin: 0;
+
+      .subtitle {
+        font-size: 14px;
+        margin: 0 0 16px;
+      }
+
+      .title {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .price {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        padding: 32px 0;
+        margin: 0;
+
+        .amount {
+          margin: 0;
+          font-size: 46px;
+        }
+
+        .decimals {
+          margin: 0;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .itemDescription {
+    display: grid;
+    width: 700px;
+    padding: 32px 0 0 32px;
+
+    .descriptionTitle {
+      font-size: 28px;
+      margin: 0;
+      padding-bottom: 32px;
+    }
+
+    .description {
+      margin: 0;
+      white-space: break-spaces;
+      font-size: 16px;
+      color: $color-medium-gray;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .item {
+    width: 700px;
+    padding: 10px;
+
+    .itemDetails {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+      .imageWrapper {
+        min-width: 580px;
+        height: 400px;
+        .image {
+        }
+      }
+
+      .itemInfo {
+        margin-right: 0px;
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        .title {
+          font-size: 24px;
+          margin-bottom: 0px;
+        }
+
+        .price {
+          font-size: 46px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    .itemDescription {
+      display: grid;
+      width: 700px;
+      margin: 15px 0px;
+      .descriptionTitle {
+        font-size: 28px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .item {
+    width: 700px;
+    margin-bottom: 30px;
+
+    .itemDetails {
+      margin-top: 32px;
+
+      .imageWrapper {
+        min-width: 480px;
+        height: 300px;
+        .image {
+        }
+      }
+
+      .itemInfo {
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        .title {
+          font-size: 20px;
+        }
+
+        .price {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .itemDescription {
+      display: grid;
+      width: 700px;
+
+      .descriptionTitle {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      .description {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .item {
+    max-width: 95%;
+    margin-bottom: 20px;
+    .itemDetails {
+      margin-top: 5px;
+
+      .imageWrapper {
+        min-width: 180px;
+        height: 300px;
+        .image {
+        }
+      }
+
+      .itemInfo {
+        width: fit-content;
+        margin-right: 0px;
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        .title {
+          font-size: 24px;
+        }
+
+        .price {
+          .amount {
+            font-size: 42px;
+          }
+
+          .decimals {
+            margin: 0;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    .itemDescription {
+      width: fit-content;
+
+      .descriptionTitle {
+        font-size: 28px;
+      }
+
+      .description {
+        width: fit-content;
+        font-size: 16px;
+      }
+    }
+  }
+}

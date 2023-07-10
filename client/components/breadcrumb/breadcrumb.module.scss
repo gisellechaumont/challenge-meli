@@ -1,0 +1,24 @@
+@import "../../styles/globals.scss";
+
+.breadcrumb {
+  margin: 16px 0;
+  position: relative;
+  left: 15%;
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: $color-medium-gray;
+
+    & li:not(:last-child)::after {
+      display: inline-block;
+      margin: 0 0.25rem;
+
+      content: ">";
+    }
+  }
+}
